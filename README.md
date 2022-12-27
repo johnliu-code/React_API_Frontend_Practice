@@ -40,11 +40,11 @@ https://api.unsplash.com/photos/?client_id=YOUR_ACCESS_KEY
 
 Libraries & SDKs
 To make it as easy as possible to integrate the Unsplash API, official libraries and SDKs exist in:
-PHP (unsplash/unsplash-php)
-Ruby (unsplash/unsplash_rb)
-Javascript (unsplash/unsplash-js)
-iOS (unsplash/unsplash-photopicker-ios)
-Android (unsplash/unsplash-photopicker-android)
+1)PHP (unsplash/unsplash-php)
+2)Ruby (unsplash/unsplash_rb)
+3)Javascript (unsplash/unsplash-js)
+4)iOS (unsplash/unsplash-photopicker-ios)
+5)Android (unsplash/unsplash-photopicker-android)
 
 HTTP Verbs
 The Unsplash API uses HTTP verbs appropriate to each action.
