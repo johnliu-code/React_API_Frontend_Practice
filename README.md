@@ -6,18 +6,8 @@ Or: clone the repo
 
 ### `npm install`
 
-## Available Scripts
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
+## About project
 
 1.Choose of the API
 Reason: 
@@ -117,6 +107,19 @@ count	The number of photos to return. (Default: 1; max: 30)
 2)Set the images as background of page components parts;
 3)Comments or likes...
 
+
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
 ### `npm test`
 
