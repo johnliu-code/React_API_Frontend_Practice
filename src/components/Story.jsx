@@ -1,29 +1,34 @@
 import React from 'react';
-import { format } from "date-fns"
-import { Card, Icon, Image } from 'semantic-ui-react'
+import { Card, Image } from 'semantic-ui-react'
 
-function Story({story}) {
+const Story = ({stories, user}) => {
   return (
-    <>
-        <Card style={{margin: "20px"}}>
-            <Image src={story.urls.regular} wrapped ui={false} />
+    <div className='story_box'>
+       {stories? stories.map((story, i) => (
+          <Card style={{margin: "20px"}} key={i}>
+            <Image src={story.imgurl} wrapped ui={false} />
             <Card.Content>
-            <Card.Header>{story.user.name}</Card.Header>
+            <Card.Header className='story_title'>Title: {story.title}</Card.Header>
             <Card.Meta>
-                <span className='date'>{format(new Date(story.created_at), "dd MMMM yyyy")}</span>
+                <span className='date'>Author: {story.author}</span>
+            </Card.Meta>
+            <Card.Meta>
+                <span className='date'>Create by: {user}</span>
             </Card.Meta>
             <Card.Description>
-                <a href={`https://instagram.com/${story.user.instagram_username}`} target="_blank" rel="noreferrer">Instagram</a>
+                <a href={story.instagram} target="_blank" rel="noreferrer">Image : Instagram</a>
             </Card.Description>
             </Card.Content>
             <Card.Content extra>
-            <a href='/'>
-                <Icon name='user' />
-                {story.likes} Likes
-            </a>
+                {story.content ? story.content.map((line, i) => (
+                i < 6 ?
+                    <p key={i}>{line}</p>
+                : undefined
+                )) : undefined}
             </Card.Content>
         </Card>
-    </>
+       )) : undefined}
+    </div>
   )
 }
 
